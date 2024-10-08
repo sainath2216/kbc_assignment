@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Build a Simple KBC-style Game 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Develop a KBC-style game where the question and a QR code are displayed on a computer screen. Players who wish to participate scan the QR code using their mobile devices, enter their names, and view the same question on their screen.
 
-## Available Scripts
+## Refer to the image below:
+![image](https://github.com/user-attachments/assets/48193f49-ee95-4842-8bf4-2515b64933ee)
 
-In the project directory, you can run:
 
-### `npm start`
+### `Set Up Instructions`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
++ Download dependencies by running npm install
++ Start up the app using npm start
+  - Runs the app in the development mode.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `Completion Instructions`
+1.Generate a QR code using a library (e.g., qrcode.react) in the main screen component (the computer screen).
+2.The QR code will contain the link to the same React application that players can scan on their mobile devices to join the game.
+3.When a player submits their answer from the mobile screen, check if the answer matches the correct one.
+4.If the answer is correct:
+  - Display a congratulatory message on the computer screen along with the player's name.
+  - If the answer is incorrect Send feedback to the player’s mobile screen indicating that the answer is wrong.
+5. Ending the Game When all questions are answered, display a completion message on the main screen.
+6. Test the flow by running the app on both a computer and a mobile device (using the QR code to join).
+7. Final Testing and Polish Ensure the question display, answer submission, and validation work correctly.
+8. Refine the UI/UX to ensure smooth transitions between questions and provide clear feedback for both correct and incorrect answers.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Key Considerations`
 
-### `npm run build`
++ State Management: All game logic, including question handling, player management, and answer validation, will be managed using React’s useState or useReducer hooks.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
++ Single Application for Both Views: Both the computer and mobile screens will be different views of the same application. React’s component-based structure makes it easy to conditionally render different UIs based on whether the user is on the computer or mobile.
++ QR Code: The QR code is a simple mechanism to allow mobile players to quickly join the game, making the app more interactive and closer to the real KBC experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Font-families`
++ #fff
++ #00000
++ #ff0000
++ #1A237E
++ #FFEB3B
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
