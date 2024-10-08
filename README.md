@@ -19,11 +19,16 @@ Develop a KBC-style game where the question and a QR code are displayed on a com
 4.If the answer is correct:
   - Display a congratulatory message on the computer screen along with the player's name.
   - If the answer is incorrect Send feedback to the player’s mobile screen indicating that the answer is wrong.
-5. Ending the Game When all questions are answered, display a completion message on the main screen.
+  - 5. Ending the Game When all questions are answered, display a completion message on the main screen.
 6. Test the flow by running the app on both a computer and a mobile device (using the QR code to join).
 7. Final Testing and Polish Ensure the question display, answer submission, and validation work correctly.
 8. Refine the UI/UX to ensure smooth transitions between questions and provide clear feedback for both correct and incorrect answers.
 
+### `Implementation Files`
++ src/components/GameLargeScreen/index.js
++ src/components/GameLargeScreen/index.css
++ src/components/GameMobileScreen/index.js
+  
 
 ### `Key Considerations`
 
