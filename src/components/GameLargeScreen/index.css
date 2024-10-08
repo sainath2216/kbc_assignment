@@ -1,0 +1,241 @@
+
+.img-container{
+  background-image: url("https://i.pinimg.com/564x/18/56/04/185604a0d321529d51331620ac3b4e0b.jpg");
+  background-size: cover;
+  min-height: 110vh;
+  width: auto;
+}
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .kbc-heading{
+    font-family: "Sans-serif";
+    color: #000000;
+    background-color: #FFEB3B;
+  }
+  .game-title {
+    font-family: "Sans-serif";
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .qr-code-section {
+    margin: 20px 0;
+  }
+  
+  .qr-code {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .qr-description{
+    font-weight: 700;
+    font-family: serif;
+    font-size: 1.1rem;
+
+  }
+  
+  .player-selection {
+    margin-bottom: 20px;
+  }
+  
+  .player-label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    font-weight: 700;
+    color: #000000;
+   
+  }
+  
+  .player-dropdown,
+  .add-player-btn {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .add-player-btn {
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-player-btn:hover {
+    background-color: #2ecc71;
+  }
+  
+  .question-section {
+    background-color: #1A237E;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    color: black;
+  }
+  
+  .question-number {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+  
+  .question-text {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+  }
+  
+  .options-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  
+  .option-btn {
+    display: inline-block;
+    background-color: #4a0354;
+    color: #e87a1a;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: "Roboto";
+    width: 200px;
+    transition: background-color 0.3s ease, transform 0.0s ease;
+  }
+  
+  .option-btn:hover {
+    background-color: #FFEB3B;
+    transform: scale(1.05);
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: white;
+    animation: fadeInMessage 1.5s ease;
+    font-weight: 700;
+    font-family: serif;
+  }
+  
+  @keyframes fadeInMessage {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .game-over {
+    font-size: 2.0rem;
+    color: #ff0000;
+    margin-top: 20px;
+    animation: bounceIn 0.1s ease;
+    height: 40px;
+    font-family: "Sans-serif";
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.8rem;
+    
+  }
+  
+  @keyframes bounceIn {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .summary-section{
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+
+  }
+  .incorrect{
+    font-family: "Sans-serif";
+    color: #000000;
+    background-color: #ff0000;
+    font-size: 1.2rem;
+    padding: 10px;
+    
+
+  }
+  @media (max-width: 600px) {
+    .quiz-container {
+      padding: 15px;
+    }
+  
+    .game-title {
+      font-size: 2rem;
+    }
+  
+    .qr-code {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .player-dropdown,
+    .add-player-btn {
+      font-size: 0.9rem;
+    }
+  
+    .option-btn {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  
+    .message {
+      font-size: 1rem;
+    }
+  }
+  .continue{
+    font-family: "Sans-serif";
+    color: #000000;
+    background-color: rgb(46, 203, 46);
+    padding: 2px;
+    border-radius: 3px;
+
+  }
